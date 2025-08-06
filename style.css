@@ -1,0 +1,134 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Шапка сайта */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #4facfe;
+}
+
+/* Основное содержимое */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Ссылки */
+a {
+    display: inline-block;
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #00f2fe;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Список качеств */
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4facfe;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    header img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Специальные классы для отступов */
+.space {
+    letter-spacing: 0.5em;
+}
+
+/* Эффекты для текста */
+.highlight {
+    color: #ff8a00;
+    font-weight: bold;
+}
+
+/* Глобальные анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in;
+}
